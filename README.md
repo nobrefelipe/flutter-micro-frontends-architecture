@@ -3,6 +3,10 @@
 
 This is a proposition of a micro front end implementation for Flutter apps.
 
+As in per the micro services architecture, the micro apps can't know about the existence of other micro apps. 
+
+They must be as simple as possible and be responsible for only one task of a subdomain (DDD).
+
 It uses **Events** for communication between micro apps and also a **Router Manager** for generating and implementing the routing system.
 
 See the diagrams below for a better overview.
