@@ -1,0 +1,218 @@
+<mxfile host="65bd71144e">
+    <diagram id="2YVA1TK6Se0Cfl50Wmo0" name="Page-1">
+        <mxGraphModel dx="1784" dy="1011" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="&lt;font color=&quot;#001933&quot; style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;Best practices&lt;/b&gt;&lt;br&gt;Events are aways in the past sentence. And should always end with the 'Event' keywork.&lt;br&gt;Thus, events are&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;color: rgb(0 , 25 , 51) ; font-size: 20px&quot;&gt;always&lt;/span&gt;&lt;font color=&quot;#001933&quot; style=&quot;font-size: 20px&quot;&gt;&amp;nbsp;triggered after an action.&lt;br&gt;Eg.: UserLoggedInEvent, AccountCreatedEvent&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=4;" parent="1" vertex="1">
+                    <mxGeometry x="-810" y="1617" width="791" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;font color=&quot;#ff3399&quot; style=&quot;font-size: 24px&quot;&gt;Flutter Micro Front Ends&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-557" y="44" width="267" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="group;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="-804" y="139" width="782" height="171" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;font color=&quot;#333333&quot;&gt;Base App&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="16" vertex="1">
+                    <mxGeometry width="781" height="171" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Responsible for initializing the &lt;br&gt;project and setting up the &lt;br&gt;routing. It's the only one to know &lt;br&gt;all micro apps." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#333333;" parent="16" vertex="1">
+                    <mxGeometry x="501" y="36" width="281" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;font color=&quot;#1a1a1a&quot;&gt;Base App&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;fontColor=#CC00CC;strokeColor=#666666;fillColor=#FFFFFF;" parent="16" vertex="1">
+                    <mxGeometry x="328" y="55.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;font color=&quot;#333333&quot;&gt;Base App&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+                    <mxGeometry x="-801" y="372" width="772" height="171" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Responsible for making the&amp;nbsp;&lt;br&gt;middle ground between the&amp;nbsp;&lt;br&gt;base_app and the micro_apps.&lt;br&gt;It has all the necessary &lt;br&gt;mechanisms to register the&amp;nbsp;&lt;br&gt;routes and navigation.&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="-307" y="387" width="270" height="141" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;font color=&quot;#1a1a1a&quot;&gt;Micro Core&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;fontColor=#CC00CC;strokeColor=#666666;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="-473" y="427.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;font color=&quot;#333333&quot;&gt;Base App&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;fillColor=#fad7ac;strokeColor=#b46504;" parent="1" vertex="1">
+                    <mxGeometry x="-801" y="613" width="772" height="193" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Responsible for the features of &lt;br&gt;the app. Each micro_app &lt;b&gt;must&lt;br&gt;have only one responsibility&lt;/b&gt;.&lt;br&gt;It must be compact and&lt;b&gt; &lt;br&gt;never&amp;nbsp;dependent of another &lt;br&gt;micro_app&lt;/b&gt;. The communication&lt;br&gt;between micro_apps occur by&lt;br&gt;events." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="-307" y="613" width="281" height="186" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;font color=&quot;#1a1a1a&quot;&gt;Micro App&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;fontColor=#CC00CC;strokeColor=#666666;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="-473" y="668.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="&lt;strike&gt;&lt;font color=&quot;#999900&quot;&gt;flutter create --template=package&lt;/font&gt;&lt;/strike&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="-789" y="623" width="288" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="scaffold mf &amp;lt;micro_app_name&amp;gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="-786" y="650" width="275" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;font color=&quot;#333333&quot;&gt;Base App&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1">
+                    <mxGeometry x="-801" y="865" width="772" height="171" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Responsible for all shared &lt;br&gt;functionalities between the &lt;br&gt;micro_apps. They are the&amp;nbsp;&lt;br&gt;only dependencies of a micro&lt;br&gt;app." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="-307" y="892" width="257" height="118" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;font color=&quot;#1a1a1a&quot;&gt;Micro Commons&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;fontColor=#CC00CC;strokeColor=#666666;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="-473" y="920.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;font color=&quot;#333333&quot;&gt;flutter create --template=package&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="-789" y="876" width="288" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=19;fontColor=#333333;strokeColor=#000000;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="15" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-416" y="428" as="sourcePoint"/>
+                        <mxPoint x="-413" y="265" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=19;fontColor=#333333;strokeColor=#000000;strokeWidth=2;" parent="1" target="20" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-411.71999999999997" y="668.5" as="sourcePoint"/>
+                        <mxPoint x="-414.27665024630545" y="495.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="" style="endArrow=classic;html=1;fontSize=19;fontColor=#333333;strokeColor=#000000;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="23" target="28" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-333" y="747" as="sourcePoint"/>
+                        <mxPoint x="-283" y="697" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="&lt;font color=&quot;#000000&quot;&gt;Main App&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;fontColor=#333333;strokeColor=#B0E3E6;fillColor=#FFFFFF;strokeWidth=3;" parent="1" vertex="1">
+                    <mxGeometry x="105" y="186" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;font color=&quot;#000000&quot;&gt;Micro Core&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;fontColor=#333333;strokeColor=#99CCFF;fillColor=#FFFFFF;strokeWidth=3;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="335" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=19;fontColor=#333333;strokeColor=#000000;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="36" target="35" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="358" y="341.5" as="sourcePoint"/>
+                        <mxPoint x="358" y="168" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="370" y="216"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="&lt;font style=&quot;font-size: 16px&quot; color=&quot;#999999&quot;&gt;Main app implements &lt;br&gt;BaseApp from MicroCore&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#000000;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="266" y="161" width="189" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=19;fontColor=#1A1A1A;strokeColor=#000000;strokeWidth=2;" parent="1" source="40" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=19;fontColor=#1A1A1A;strokeColor=#000000;strokeWidth=2;" parent="1" source="40" target="48" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="376" y="527"/>
+                            <mxPoint x="375" y="615"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=19;fontColor=#1A1A1A;strokeColor=#000000;strokeWidth=2;" parent="1" source="40" target="49" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="374" y="527"/>
+                            <mxPoint x="376" y="702"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="&lt;font color=&quot;#1a1a1a&quot; style=&quot;font-size: 19px&quot;&gt;Auth&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=16;fontColor=#999999;strokeColor=#FFB366;strokeWidth=3;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="162" y="497" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=19;fontColor=#1A1A1A;strokeColor=#000000;strokeWidth=2;" parent="1" source="41" target="49" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="333" y="615"/>
+                            <mxPoint x="333" y="702"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="&lt;font color=&quot;#1a1a1a&quot; style=&quot;font-size: 19px&quot;&gt;Home&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=16;fontColor=#999999;strokeColor=#FFB366;strokeWidth=3;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="162" y="584.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=19;fontColor=#1A1A1A;strokeColor=#000000;strokeWidth=2;entryX=0.598;entryY=1.045;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="42" target="49" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="537.8155372256324" y="766.142833891369" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="222" y="766"/>
+                            <mxPoint x="543" y="766"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=19;fontColor=#1A1A1A;strokeColor=#000000;strokeWidth=2;entryX=0.994;entryY=0.39;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="42" target="48" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="606" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="222" y="765"/>
+                            <mxPoint x="640" y="768"/>
+                            <mxPoint x="640" y="608"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="&lt;font color=&quot;#1a1a1a&quot; style=&quot;font-size: 19px&quot;&gt;Profile&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=16;fontColor=#999999;strokeColor=#FFB366;strokeWidth=3;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="162" y="672" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=19;fontColor=#1A1A1A;strokeColor=#000000;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="163" y="527" as="sourcePoint"/>
+                        <mxPoint x="311" y="365" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="128" y="527"/>
+                            <mxPoint x="128" y="365"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=19;fontColor=#1A1A1A;strokeColor=#000000;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="41" target="36" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="128" y="617" as="sourcePoint"/>
+                        <mxPoint x="216" y="367" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="128" y="615"/>
+                            <mxPoint x="128" y="367"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=19;fontColor=#1A1A1A;strokeColor=#000000;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="42" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="162" y="615.5" as="sourcePoint"/>
+                        <mxPoint x="310" y="366" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="128" y="702"/>
+                            <mxPoint x="128" y="366"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="&lt;font style=&quot;font-size: 16px&quot; color=&quot;#999999&quot;&gt;Micro apps implement&lt;br&gt;MicroApp from MicroCore&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#000000;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="79" y="310" width="192" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Ui Kit" style="whiteSpace=wrap;html=1;fontSize=19;fontColor=#1A1A1A;strokeColor=#FF9999;strokeWidth=3;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="463" y="497" width="132" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="User" style="whiteSpace=wrap;html=1;fontSize=19;fontColor=#1A1A1A;strokeColor=#FF9999;strokeWidth=3;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="463" y="585" width="132" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Dependencies" style="whiteSpace=wrap;html=1;fontSize=19;fontColor=#1A1A1A;strokeColor=#FF9999;strokeWidth=3;fillColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="463" y="672" width="133" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;font style=&quot;font-size: 16px&quot; color=&quot;#999999&quot;&gt;Micro apps consume &lt;br&gt;micro commons&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#000000;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="294" y="470" width="158" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="&lt;font style=&quot;font-size: 30px&quot;&gt;Communication between micro front ends&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="-720" y="1190" width="563" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;font style=&quot;font-size: 22px&quot;&gt;The communication between micro front ends occurs via &lt;b&gt;Events&lt;/b&gt;.&amp;nbsp;&lt;br&gt;Every micro app can register as many events as they need. The events are&amp;nbsp;&lt;br&gt;registred in the main app via the micro app resolver.&lt;br&gt;&lt;br&gt;&lt;div style=&quot;color: rgb(169 , 183 , 198) ; background-color: rgb(43 , 43 , 43) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px ; line-height: 18px&quot;&gt;&amp;nbsp; // Login Micro App login_app_resolver.dart&lt;br&gt;&lt;div&gt;  &lt;span style=&quot;color: #cc7832 ; font-weight: bold&quot;&gt;&amp;nbsp; @override&lt;/span&gt;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #cc7832 ; font-weight: bold&quot;&gt;&amp;nbsp; void&lt;/span&gt; &lt;span style=&quot;color: #ffc66d&quot;&gt;initRouteListeners&lt;/span&gt;() {&lt;/div&gt;&lt;div&gt;    &lt;span style=&quot;color: #aaaaaa&quot;&gt;&amp;nbsp; &amp;nbsp; CustomEventBus&lt;/span&gt;.&lt;span style=&quot;color: #cc7832 ; font-weight: bold&quot;&gt;on&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #aaaaaa&quot;&gt;UserLoggedOutEvent&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;&amp;gt;&lt;/span&gt;((event) {&lt;/div&gt;&lt;div&gt;      &lt;span style=&quot;color: #ffc66d&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; print&lt;/span&gt;(&lt;span style=&quot;color: #6a8759&quot;&gt;'LOGGED OUT'&lt;/span&gt;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; });&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=30;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="-807" y="1272" width="747" height="302" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&lt;b&gt;Registering an event&lt;br&gt;&lt;/b&gt;&lt;font style=&quot;font-size: 20px&quot;&gt;We register an event using the CustomEventBus class.&lt;br&gt;The code below listens to the UserLoggedInEvent and&amp;nbsp;&lt;br&gt;navigate to the home page as a reaction.&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;background-color: rgb(43 , 43 , 43) ; color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;color: rgb(169 , 183 , 198) ; background-color: rgb(43 , 43 , 43) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px ; line-height: 18px&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #aaaaaa&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;span style=&quot;color: rgb(170 , 170 , 170)&quot;&gt;CustomEventBus&lt;/span&gt;.&lt;span style=&quot;color: rgb(204 , 120 , 50) ; font-weight: bold&quot;&gt;on&lt;/span&gt;&lt;span style=&quot;color: rgb(212 , 212 , 212)&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: rgb(170 , 170 , 170)&quot;&gt;UserLoggedInEvent&lt;/span&gt;&lt;span style=&quot;color: rgb(212 , 212 , 212)&quot;&gt;&amp;gt;&lt;/span&gt;((event) {&lt;div style=&quot;line-height: 18px&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #aaaaaa&quot;&gt;&amp;nbsp; &amp;nbsp; Routing&lt;/span&gt;.&lt;span style=&quot;color: #ffc66d&quot;&gt;pushNamed&lt;/span&gt;(&lt;span style=&quot;color: #aaaaaa&quot;&gt;Routes&lt;/span&gt;.home, arguments&lt;span style=&quot;color: #d4d4d4&quot;&gt;:&lt;/span&gt; event);&lt;/div&gt;&lt;div&gt;&amp;nbsp;});&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=22;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="-807" y="1725" width="497" height="227" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="&lt;font style=&quot;font-size: 22px&quot;&gt;&lt;b&gt;Navigation&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 20px&quot;&gt;Routing between micro front ends are managed by the Routing class.&lt;br&gt;We must register every route of the system in Routes.&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;background-color: rgb(43 , 43 , 43) ; color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;background-color: rgb(43 , 43 , 43) ; line-height: 18px&quot;&gt;&lt;div style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&lt;span style=&quot;color: #aaaaaa&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(170 , 170 , 170) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&amp;nbsp; // Routes&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px ; color: rgb(170 , 170 , 170)&quot;&gt;Routes&lt;/span&gt;&lt;span style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt; extends &lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px ; color: rgb(170 , 170 , 170)&quot;&gt;Enum&lt;/span&gt;&lt;span style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px ; color: rgb(170 , 170 , 170)&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&amp;gt; {&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px ; color: rgb(204 , 120 , 50) ; font-weight: bold&quot;&gt;static&lt;/span&gt;&lt;span style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px ; color: rgb(170 , 170 , 170)&quot;&gt;Routes&lt;/span&gt;&lt;span style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt; home &lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px ; color: rgb(212 , 212 , 212)&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px ; color: rgb(170 , 170 , 170)&quot;&gt;Routes&lt;/span&gt;&lt;span style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px ; color: rgb(170 , 170 , 170)&quot;&gt;HomeResolver&lt;/span&gt;&lt;span style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;().microAppName);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&amp;nbsp; }&lt;/span&gt;&lt;span style=&quot;color: rgb(170 , 170 , 170) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&lt;div style=&quot;line-height: 18px&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&lt;span style=&quot;color: #aaaaaa&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&lt;span style=&quot;color: #aaaaaa&quot;&gt;&amp;nbsp; // Navigate to home&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&lt;span style=&quot;color: #aaaaaa&quot;&gt;&amp;nbsp; Routing&lt;/span&gt;.&lt;span style=&quot;color: #ffc66d&quot;&gt;pushNamed&lt;/span&gt;(&lt;span style=&quot;color: #aaaaaa&quot;&gt;Routes&lt;/span&gt;.home, arguments&lt;span style=&quot;color: #d4d4d4&quot;&gt;:&lt;/span&gt;&amp;nbsp;someArgs);&lt;/div&gt;&lt;div style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 12px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=22;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="-809" y="1993" width="623" height="305" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="&lt;font color=&quot;#999999&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;Micro core generate the routes &lt;br&gt;and register the events&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#000000;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="446" y="335" width="227" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="&lt;br&gt;Technical representation of a business sub-domain.&lt;br&gt;Allow the independence of the teams.&lt;br&gt;Owned by a single team.&lt;br&gt;Minimize the code sharing between sub-domains.&lt;br&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="175" y="1353" width="465" height="124" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

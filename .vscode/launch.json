@@ -1,0 +1,60 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "base_app",
+            "cwd": "base_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "base_app (profile mode)",
+            "cwd": "base_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "micro_core",
+            "cwd": "micro_core",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "micro_core (profile mode)",
+            "cwd": "micro_core",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "home",
+            "cwd": "micro_apps/home",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "home (profile mode)",
+            "cwd": "micro_apps/home",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "login",
+            "cwd": "micro_apps/login",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "login (profile mode)",
+            "cwd": "micro_apps/login",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        }
+    ]
+}
