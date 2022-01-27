@@ -5,6 +5,64 @@ This is a proposition of a micro front end implementation for Flutter apps.
 
 It uses **Events** for communication between micro apps and also a **Router Manager** for generating and implementing the routing system.
 
+## Communication between micro front ends
+
+The communication between micro front ends occurs via Events. 
+
+Every micro app can register as many events as they need. The events are registred in the main app via the micro app resolver.
+```dart
+    // login_app_resolver.dart
+    @override
+        void initRouteListeners() {
+        CustomEventBus.on<UserLoggedOutEvent>((event) {
+            print('LOGGED OUT');
+        });
+    }
+```
+### **Best practices**
+
+Events are aways in the past sentence. And should always end with the 'Event' keywork.
+Thus, events are always triggered after an action.
+
+Eg.: `UserLoggedInEvent`, `AccountCreatedEvent`
+
+### **Registering an event**
+
+We register an event using the CustomEventBus class.
+
+The code below listens to the `UserLoggedInEvent` and navigates to the home page as a reaction. 
+```dart
+    CustomEventBus.on<UserLoggedInEvent>((event) {
+        Routing.pushNamed(Routes.home, arguments: event);
+    });
+```
+
+### **Navigation**
+
+Routing between micro front ends are managed by the Routing class.
+
+We must register every route of the system in Routes. 
+
+```dart
+    // Routes
+    class Routes extends Enum<String> {
+        static Routes home = Routes(HomeResolver().microAppName);
+    } 
+
+    // Navigate to home
+    Routing.pushNamed(Routes.home, arguments: someArgs);
+
+```
+
+See the diagrams below for a better overview.
+
+<img src="__docs/1.png" width="650px"/>
+
+<img src="__docs/2.png" width="650px"/>
+
+
+
+
 ## Creating a Micro App
 
 To create a micro app you can user the [**Flutter Micro Front End Scaffolding Tool**](https://github.com/nobrefelipe/flutter-micro-front-end-scaffolding-tool).
@@ -85,5 +143,5 @@ This gives us a very powefull tool for **Feature Toggle** and **AB Testing**. Th
     final String topBarWidget = someApiRespose(); // search
     WidgetsRegistry[topBarWidget],
 ```
-Immagine we have a search API and somehow it breaks. Instead of showing erros o the user or breaking the app, we could just make that endpoint return another 
+Immagine we have a search API and somehow it breaks. Instead of showing erros to the user or breaking the app, we could just make that endpoint return another 
 widget that could replace it for the time being.
