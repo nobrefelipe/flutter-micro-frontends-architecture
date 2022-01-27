@@ -5,6 +5,13 @@ This is a proposition of a micro front end implementation for Flutter apps.
 
 It uses **Events** for communication between micro apps and also a **Router Manager** for generating and implementing the routing system.
 
+See the diagrams below for a better overview.
+
+<img src="__docs/1.png" width="650px"/>
+
+<img src="__docs/2.png" width="650px"/>
+
+
 ## Communication between micro front ends
 
 The communication between micro front ends occurs via Events. 
@@ -13,7 +20,7 @@ Every micro app can register as many events as they need. The events are registr
 ```dart
     // login_app_resolver.dart
     @override
-        void initRouteListeners() {
+    void initRouteListeners() {
         CustomEventBus.on<UserLoggedOutEvent>((event) {
             print('LOGGED OUT');
         });
@@ -54,11 +61,7 @@ We must register every route of the system in Routes.
 
 ```
 
-See the diagrams below for a better overview.
 
-<img src="__docs/1.png" width="650px"/>
-
-<img src="__docs/2.png" width="650px"/>
 
 
 
