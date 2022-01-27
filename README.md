@@ -63,11 +63,10 @@ We must register every route of the system in Routes.
     // Navigate to home
     Routing.pushNamed(Routes.home, arguments: someArgs);
 
+    // Navigate with custom transition
+    Routing.pushCustom(SearchResults(), transitionType: TransitionType.slideUp);
+
 ```
-
-
-
-
 
 
 ## Creating a Micro App
