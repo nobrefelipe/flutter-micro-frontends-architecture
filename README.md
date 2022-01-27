@@ -45,7 +45,7 @@ This step is done manually so we can make available the right naming routes and 
     }
 
 ```
-The we can use the routes and events like this:
+Then we can use the routes and events like this:
 ```dart
     // Navigate to Login VIew
     Routing.pushNamed(Routes.login);
@@ -55,11 +55,11 @@ The we can use the routes and events like this:
 
 ```
 ## Using a Micro App as a Widget
-Sometimes you might need to export your micro app as a widget, meaning that you might not have a initial route for that or it's simply not a view.
+Sometimes you might need to export your micro app as a widget, meaning that you might not have an initial route for that or it's simply not a view.
 
 For instance, you can have a `search_micro_app.dart` that exports a search text field that will navigate to a seach results page upon tapping on it.
 
-In this case you can use the `microAppWidget()` method of your micro app. This method will export a widget that can be used from other micro apps.
+In this case you can use the `microAppWidget()` method of your micro app. This method will export a widget that can be used by other micro apps.
 Eg.:
 ```dart
     // in SearchMicroAppResolver
@@ -73,7 +73,7 @@ The `microAppWidget()` method will be registred on the `WidgetsRegistry` when th
         children: [
             // Outputs the search micro app  widget.
             // note: the Home micro app has no idea what this will output.
-            // The WidgetsRegistry is generated when the app builds by providing to the base app the micro apps resolvers.
+            // The WidgetsRegistry is generated when the app builds.
             // This means we can include a Widget dynamicaly based on what an api tells us.
             WidgetsRegistry['/search'],
         ]
@@ -85,3 +85,5 @@ This gives us a very powefull tool for **Feature Toggle** and **AB Testing**. Th
     final String topBarWidget = someApiRespose(); // search
     WidgetsRegistry[topBarWidget],
 ```
+Immagine we have a search API and somehow it breaks. Instead of showing erros o the user or breaking the app, we could just make that endpoint return another 
+widget that could replace it for the time being.
