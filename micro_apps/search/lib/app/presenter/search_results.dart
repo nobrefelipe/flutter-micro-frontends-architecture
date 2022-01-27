@@ -9,6 +9,7 @@ class SearchResults extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Search results'),
       ),
+      backgroundColor: Colors.red,
       body: Container(),
     );
   }
