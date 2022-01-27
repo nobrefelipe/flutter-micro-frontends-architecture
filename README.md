@@ -9,7 +9,6 @@ They must be as simple as possible and be responsible for only one task of a sub
 
 It uses **Events** for communication between micro apps and also a **Router Manager** for generating and implementing the routing system.
 
-Run the project from within the `base_app` for a working exemple.
 
 See the diagrams below for a better overview.
 
