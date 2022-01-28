@@ -114,9 +114,9 @@ We must register every route of the system in Routes.
 
 When you navigate using named routes you can pass arguments via contructor when you set up the routes for the micro app.
 
-In the **micro app resolver** you register the routes in he `routes` getter and also define the arguments the view will receive.
+In the **micro app resolver** you register the routes in the `routes` getter and also define the arguments the view will receive.
 
-The arguments must be of `RouteEvent type`. THis is because we can navigate using the `Routing` class or via `Event`.
+The arguments must be of type `RouteEvent`. This is because we can navigate using the `Routing` class or via `Event`.
 
 ```dart
     // home_resolver.dart
@@ -145,7 +145,7 @@ And you can get the argument passed like so:
 Then when you need to navigate to the Home Micro App:
 
 ```dart
-    // See Using Micro Apps section below to knw how to register routes.
+    // See Using Micro Apps section below to konw how to register routes.
 
     Routing.pushNamed(
         Routes.home,
