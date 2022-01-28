@@ -66,7 +66,7 @@ We must register every route of the system in Routes.
 
 ```
 
-### **Custom Route Tansitions**
+#### **Custom Route Tansitions**
 
 You can use custom route transitions predefined in the `Transitions` class.
 
