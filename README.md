@@ -1,7 +1,7 @@
 # Flutter Micro Front Ends Architecture
   
 
-This is a proposition for a micro front end implementation for Flutter apps.
+This is a proposal of a micro front end implementation for Flutter apps.
 
 As in per the micro services architecture, the micro apps can't know about the existence of other micro apps. 
 
@@ -19,6 +19,17 @@ See the diagrams below for a better overview.
 ## Example
 
 Run the app from the `base_app/` directory.
+
+## Creating a Micro App
+
+To create a micro app you can user the [**Flutter Micro Front End Scaffolding Tool**](https://github.com/nobrefelipe/flutter-micro-front-end-scaffolding-tool).
+
+
+Click on the link above and follow installation instructions, then in your micro apps folder run:
+```
+ $  scaffold mf <micro_app_name>
+```
+
 
 ## Communication between micro front ends
 
@@ -38,7 +49,7 @@ Every micro app can register as many events as they need. The events are registr
 
 ### **Best practices**
 
-Events are aways in the past sentence. And should always end with the 'Event' keywork.
+Events are aways in the past tense. And should always end with the 'Event' keywork.
 Thus, events are always triggered after an action.
 
 Eg.: `UserLoggedInEvent`, `AccountCreatedEvent`
@@ -99,6 +110,50 @@ We must register every route of the system in Routes.
     Routing.pushNamed(Routes.home, arguments: someArgs);
 
 ```
+### **Passing Arguments**
+
+When you navigate using named routes you can pass arguments via contructor when you set up the routes for the micro app.
+
+In the **micro app resolver** you register the routes in he `routes` getter and also define the arguments the view will receive.
+
+The arguments must be of `RouteEvent type`. THis is because we can navigate using the `Routing` class or via `Event`.
+
+```dart
+    // home_resolver.dart
+
+    @override
+    Map<String, WidgetBuilderArgs> get routes => {
+        microAppName: (context, args) => HomeView(args as UserLoggedInEvent), //home_view.dart
+    };
+
+```
+
+And you can get the argument passed like so:
+
+```dart
+    //home_view.dart
+
+    class HomeView extends StatelessWidget {
+
+        final UserLoggedInEvent args;
+        HomeView(this.args);
+
+        //...
+    }
+```
+
+Then when you need to navigate to the Home Micro App:
+
+```dart
+    // See Using Micro Apps section below to knw how to register routes.
+
+    Routing.pushNamed(
+        Routes.home,
+        arguments: RouteEvents.homeEvents.userLoggedInEvent('Felipe'),
+    );
+```
+
+
 
 ### **Custom Route Tansitions**
 
@@ -113,14 +168,6 @@ You can use custom route transitions predefined in the `Transitions` class.
 ```
 
 
-## Creating a Micro App
-
-To create a micro app you can user the [**Flutter Micro Front End Scaffolding Tool**](https://github.com/nobrefelipe/flutter-micro-front-end-scaffolding-tool).
-
-Click on the link above and follow installation instructions, then in your micro apps folder run:
-```
- $  scaffold mf <micro_app_name>
-```
 
 ## Using Micro Apps
 When you create a micro app you need to register it in two places.

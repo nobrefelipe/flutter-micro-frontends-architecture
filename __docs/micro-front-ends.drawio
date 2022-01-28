@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="2YVA1TK6Se0Cfl50Wmo0" name="Page-1">
-        <mxGraphModel dx="1784" dy="1011" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="1867" dy="1011" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -40,11 +40,8 @@
                 <mxCell id="23" value="&lt;font color=&quot;#1a1a1a&quot;&gt;Micro App&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;fontColor=#CC00CC;strokeColor=#666666;fillColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="-473" y="668.5" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="&lt;strike&gt;&lt;font color=&quot;#999900&quot;&gt;flutter create --template=package&lt;/font&gt;&lt;/strike&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#1A1A1A;" parent="1" vertex="1">
-                    <mxGeometry x="-789" y="623" width="288" height="27" as="geometry"/>
-                </mxCell>
                 <mxCell id="25" value="scaffold mf &amp;lt;micro_app_name&amp;gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontColor=#1A1A1A;" parent="1" vertex="1">
-                    <mxGeometry x="-786" y="650" width="275" height="27" as="geometry"/>
+                    <mxGeometry x="-789" y="626" width="275" height="27" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="&lt;font color=&quot;#333333&quot;&gt;Base App&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1">
                     <mxGeometry x="-801" y="865" width="772" height="171" as="geometry"/>
