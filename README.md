@@ -40,7 +40,36 @@ Eg.: `UserLoggedInEvent`, `AccountCreatedEvent`
 
 ### **Registering an event**
 
-We register an event using the CustomEventBus class.
+When you create a micro app with the `scaffold cli` it will create an `*_events.dart` file for you (eg.: search_events.dart) with some dummy events registred there to be used as examples.
+
+Here is where you should register all events for your micro app.
+
+```dart
+    // search_events.dart 
+
+    class SearchDummyEvent extends RouteEvent {
+        final String user;
+        SearchDummyEvent(this.user);
+    }
+
+    class SearchNotFountEvent extends RouteEvent{}
+```
+
+Then you need to export the events, so they are made available for the whole app.
+
+We can export the events as functions that receive a parameter that will pe passed to the event itself or as getters.
+
+```dart
+    // search_events.dart
+
+    class SearchEvents extends RouteEvent {
+        RouteEvent dummyEvent(String user) => SearchDummyEvent(user);
+        RouteEvent searchNotFountEvent = SearchNotFountEvent();
+        // More Search Events here
+    }
+```
+
+We listem to events using the CustomEventBus class.
 
 The code below listens to the `UserLoggedInEvent` and navigates to the home page as a reaction. 
 ```dart
