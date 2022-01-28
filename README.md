@@ -64,9 +64,18 @@ We must register every route of the system in Routes.
     // Navigate to home
     Routing.pushNamed(Routes.home, arguments: someArgs);
 
+```
+
+### **Custom Route Tansitions**
+
+You can use custom route transitions predefined in the `Transitions` class.
+
+```dart
+    // For the custom transitions see:
+    // micro_core/lib/services/routing/routing_transitions.dart
+    
     // Navigate with custom transition
     Routing.pushCustom(SearchResults(), transitionType: TransitionType.slideUp);
-
 ```
 
 
