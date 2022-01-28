@@ -16,6 +16,9 @@ See the diagrams below for a better overview.
 
 <img src="__docs/2.png" width="650px"/>
 
+## Example
+
+Run the app from the `base_app/` directory.
 
 ## Communication between micro front ends
 
@@ -31,6 +34,8 @@ Every micro app can register as many events as they need. The events are registr
         });
     }
 ```
+
+
 ### **Best practices**
 
 Events are aways in the past sentence. And should always end with the 'Event' keywork.
