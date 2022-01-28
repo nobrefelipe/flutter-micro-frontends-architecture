@@ -13,6 +13,17 @@ enum TransitionType {
   slideRight,
 }
 
+///
+/// * Route Transitions
+///
+/// Define some out of the box page transitions.
+///
+/// Eg.: SlideUp, SLideDown, SlideRight, SlideLeft and Fade.
+///
+/// ```
+///  Routing.pushCustom(SearchResults(), transitionType: TransitionType.slideUp);
+/// ```
+///
 class Transitions<T> extends PageRouteBuilder<T> {
   final TransitionType transitionType;
   final Curve curve;
