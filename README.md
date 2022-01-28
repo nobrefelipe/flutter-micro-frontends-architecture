@@ -40,7 +40,7 @@ Eg.: `UserLoggedInEvent`, `AccountCreatedEvent`
 
 ### **Registering an event**
 
-When you create a micro app with the `scaffold cli` it will create an `*_events.dart` file for you (eg.: search_events.dart) with some dummy events registred there to be used as examples.
+When you create a micro app with the `scaffold cli` it will create a `*_events.dart` file for you (eg.: search_events.dart) with some dummy events registred there to be used as examples.
 
 Here is where you should register all events for your micro app.
 
@@ -57,14 +57,14 @@ Here is where you should register all events for your micro app.
 
 Then you need to export the events, so they are made available for the whole app.
 
-We can export the events as functions that receive a parameter that will pe passed to the event itself or as getters.
+We can export the events as functions that receive parameters that will pe passed to the event itself or as getters.
 
 ```dart
     // search_events.dart
 
     class SearchEvents extends RouteEvent {
         RouteEvent dummyEvent(String user) => SearchDummyEvent(user);
-        RouteEvent searchNotFountEvent = SearchNotFountEvent();
+        RouteEvent get searchNotFountEvent => SearchNotFountEvent();
         // More Search Events here
     }
 ```
