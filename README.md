@@ -49,7 +49,7 @@ The code below listens to the `UserLoggedInEvent` and navigates to the home page
     });
 ```
 
-### **Navigation**
+## **Navigation**
 
 Routing between micro front ends are managed by the Routing class.
 
@@ -66,7 +66,7 @@ We must register every route of the system in Routes.
 
 ```
 
-#### **Custom Route Tansitions**
+### **Custom Route Tansitions**
 
 You can use custom route transitions predefined in the `Transitions` class.
 
