@@ -73,7 +73,7 @@ Here is where you should register all events for your micro app.
 
 Then you need to export the events, so they are made available for the whole app.
 
-We can export the events as functions that receive parameters that will pe passed to the event itself or as getters.
+We can export the events as functions that receive parameters that will be passed to the event itself or as getters.
 
 ```dart
     // search_events.dart
@@ -85,7 +85,7 @@ We can export the events as functions that receive parameters that will pe passe
     }
 ```
 
-We listem to events using the CustomEventBus class.
+We listen to events using the CustomEventBus class.
 
 The code below listens to the `UserLoggedInEvent` and navigates to the home page as a reaction. 
 ```dart
