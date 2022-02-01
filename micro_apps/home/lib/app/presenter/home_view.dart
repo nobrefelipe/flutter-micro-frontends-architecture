@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, use_key_in_widget_constructors, prefer_const_constructors
 
-import 'package:dependencies/dependencies.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:micro_core/micro_core.dart';
 
@@ -35,22 +35,18 @@ class HomeView extends StatelessWidget {
             WidgetsRegistry['/search'] ?? SizedBox.shrink(),
             //
             SizedBox(height: 30),
-            SUIButton.solid(
-              label: 'Logout',
-              width: 240,
-              height: 50,
-              ontap: () {
+            CupertinoButton(
+              child: const Text('logout'),
+              onPressed: () {
                 print('======== Navigating to Login Screen via routing ========');
                 Routing.pushNamed(Routes.login);
                 print('======== Emit UserLoggedOutEvent listened by the Login view ========');
                 CustomEventBus.emit(RouteEvents.loginEvents.userLoggedOutEvent);
               },
             ),
-            SUIButton.text(
-              label: 'open bottom sheet',
-              width: 240,
-              height: 50,
-              ontap: () {
+            CupertinoButton(
+              child: const Text('open bottom sheet'),
+              onPressed: () {
                 print('======== Open a bottom sheet via OpenBottomSheet Event ========');
                 CustomEventBus.emit(OpenBottomSheet('Home'));
               },
