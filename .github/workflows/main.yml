@@ -1,14 +1,14 @@
-name: Monorepo PR Repo Labeler
+# name: Monorepo PR Repo Labeler
 
-on: pull_request
+# on: pull_request
 
-jobs:
-  labelPR:
-    name: Label PR With Repo(s)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: TinkurLab/monorepo-pr-labeler-action@3.1.0
-        name: Label PRs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BASE_DIRS: 'micro_apps'
+# jobs:
+#   labelPR:
+#     name: Label PR With Repo(s)
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: TinkurLab/monorepo-pr-labeler-action@3.1.0
+#         name: Label PRs
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           BASE_DIRS: 'micro_apps'
