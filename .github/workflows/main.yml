@@ -1,0 +1,14 @@
+name: Monorepo PR Repo Labeler
+
+on: pull_request
+
+jobs:
+  labelPR:
+    name: Label PR With Repo(s)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label PRs
+        uses: tinkurlab/monorepo-pr-labeler-action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   
