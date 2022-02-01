@@ -8,7 +8,10 @@ class SearchButton extends StatelessWidget {
     return CupertinoButton(
       child: const Text('Search micro app'),
       onPressed: () {
-        Routing.pushCustom(SearchResults(), transitionType: TransitionType.slideUp);
+        Routing.pushCustom(
+          SearchResults(),
+          transitionType: TransitionType.slideUp,
+        );
       },
     );
   }
