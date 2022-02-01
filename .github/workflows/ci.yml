@@ -39,6 +39,7 @@ jobs:
         with:
           flutter-version: '2.8.0'
           channel: "stable"
+      - run: flutter clean
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter format --dry-run --set-exit-if-changed lib/
