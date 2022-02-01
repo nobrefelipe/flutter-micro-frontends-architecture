@@ -13,6 +13,16 @@ on:
       - main
 
 jobs:
+  labelPR:
+    name: Label PR With Repo(s)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: TinkurLab/monorepo-pr-labeler-action@3.1.0
+        name: Label PRs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE_DIRS: 'micro_apps'
+          
   flutter_test:
     name: Run Flutter analyze and test
     runs-on: ubuntu-latest
