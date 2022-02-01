@@ -7,7 +7,7 @@ jobs:
     name: Label PR With Repo(s)
     runs-on: ubuntu-latest
     steps:
-      - uses: tinkurlab/monorepo-pr-labeler-action
+      - uses: TinkurLab/monorepo-pr-labeler-action@3.1.0
         name: Label PRs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
