@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:micro_core/micro_core.dart';
 import 'package:search/app/presenter/search_results.dart';
 
