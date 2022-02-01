@@ -11,6 +11,14 @@ on:
       - master
 
 jobs:
+  labelPR:
+    name: Label PR With Repo(s)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label PRs
+        uses: adamzolyak/monorepo-pr-labeler-action@patching
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   flutter_test:
     name: Run Flutter analyze and test
     runs-on: ubuntu-latest
