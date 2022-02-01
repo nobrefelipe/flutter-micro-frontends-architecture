@@ -8,7 +8,9 @@ import 'package:micro_core/micro_core.dart';
 
 class SearchDummyEvent extends RouteEvent {
   final String user;
-  SearchDummyEvent(this.user);
+  SearchDummyEvent(
+    this.user,
+  );
 } // DUMMY EVENT
 
 ///
@@ -16,6 +18,6 @@ class SearchDummyEvent extends RouteEvent {
 /// them from other micro apps. LoginEvents will be used by [RouteEvents]
 ///
 class SearchEvents extends RouteEvent {
-   RouteEvent dummyEvent(String user) => SearchDummyEvent(user);
+  RouteEvent dummyEvent(String user) => SearchDummyEvent(user);
   // Search events here
 }
