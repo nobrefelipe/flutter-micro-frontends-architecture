@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
 
 class SearchResults extends StatelessWidget {
-  const SearchResults({Key? key}) : super(key: key);
+  SearchResults({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Search results'),
-      ),
-      backgroundColor: Colors.red,
-      body: Container(),
-    );
+    return Scaffold(appBar: AppBar(title: Text('Search results')), backgroundColor: Colors.red, body: Container());
   }
 }
