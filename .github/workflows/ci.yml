@@ -51,6 +51,6 @@ jobs:
           name: test-results
           path: ./micro_apps/search/test-results.json
           reporter: flutter-json
-      - uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
-        with:
-          min_coverage: 40
+      # - uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
+      #   with:
+      #     min_coverage: 40
