@@ -1,4 +1,4 @@
-name: CI
+name: CI [Search Mico App]
 
 on: 
   push:
