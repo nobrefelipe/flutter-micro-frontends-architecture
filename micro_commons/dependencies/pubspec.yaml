@@ -9,9 +9,5 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  shift_ui:
-    git:
-      url: git@github.com:ShiftGroupLtd/shift-partner-app.git
-      path: shift_ui
-      ref: dependency-manager
+
 

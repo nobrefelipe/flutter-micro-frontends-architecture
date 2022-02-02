@@ -1,4 +1,4 @@
-import 'package:dependencies/dependencies.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:micro_core/micro_core.dart';
 
@@ -19,11 +19,9 @@ class LoginView extends StatelessWidget {
             children: [
               Align(
                 alignment: Alignment.center,
-                child: SUIButton.solid(
-                  label: 'Login',
-                  width: 240,
-                  height: 50,
-                  ontap: () {
+                child: CupertinoButton(
+                  child: const Text('Login'),
+                  onPressed: () {
                     print('======== Navigating to Home Screen via UserLoggedInEvent ========');
                     Routing.pushNamed(
                       Routes.home,

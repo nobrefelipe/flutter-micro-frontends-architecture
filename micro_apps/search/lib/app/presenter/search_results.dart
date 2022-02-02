@@ -5,6 +5,12 @@ class SearchResults extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text('Search results')), backgroundColor: Colors.red, body: Container());
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Search results'),
+      ),
+      backgroundColor: Colors.red,
+      body: Container(),
+    );
   }
 }

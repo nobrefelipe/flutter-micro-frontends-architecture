@@ -1,11 +1,6 @@
-name: CI
+name: CI [Search Mico App]  # <- change micro app name here 
 
 on: 
-  push:
-    branches:
-      - develop
-      - master
-      - main
   pull_request:
     branches:
       - develop
@@ -14,7 +9,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./micro_apps/search
+    working-directory: ./micro_apps/search # <- change micro app folder name here 
 
 jobs:
   labelPR:
@@ -46,11 +41,11 @@ jobs:
       - run: flutter format --dry-run --set-exit-if-changed test/
       - run: flutter test --coverage
       - run: flutter test --machine > test-results.json
-      - uses: dorny/test-reporter@v1.5
+      - uses: dorny/test-reporter@v1.5.0
         with:
           name: test-results
-          path: test-results.json
+          path: ./micro_apps/search/test-results.json  # <- change micro app folder name here 
           reporter: flutter-json
-      - uses: VeryGoodOpenSource/very_good_coverage@v1.2
-        with:
-          min_coverage: 0
+      # - uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
+      #   with:
+      #     min_coverage: 40
