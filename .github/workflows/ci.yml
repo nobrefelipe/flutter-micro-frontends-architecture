@@ -37,7 +37,6 @@ jobs:
           java-version: "12.x"
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '2.8.0'
           channel: "stable"
       - run: flutter clean
       - run: flutter pub get
@@ -46,7 +45,7 @@ jobs:
       - run: flutter format --dry-run --set-exit-if-changed test/
       - run: flutter test --coverage
       - run: flutter test --machine > test-results.json
-      - uses: dorny/test-reporter@v1.5.0
+      - uses: dorny/test-reporter@v1.4.2
         with:
           name: test-results
           path: test-results.json
