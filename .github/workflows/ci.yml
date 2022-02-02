@@ -53,4 +53,4 @@ jobs:
           reporter: flutter-json
       - uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
         with:
-          min_coverage: 0
+          min_coverage: 40
