@@ -1,11 +1,6 @@
-name: CI [Search Mico App]
+name: CI [Search Mico App]  # <- change micro app name here 
 
 on: 
-  push:
-    branches:
-      - develop
-      - master
-      - main
   pull_request:
     branches:
       - develop
@@ -14,7 +9,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./micro_apps/search
+    working-directory: ./micro_apps/search # <- change micro app folder name here 
 
 jobs:
   labelPR:
@@ -49,7 +44,7 @@ jobs:
       - uses: dorny/test-reporter@v1.5.0
         with:
           name: test-results
-          path: ./micro_apps/search/test-results.json
+          path: ./micro_apps/search/test-results.json  # <- change micro app folder name here 
           reporter: flutter-json
       # - uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
       #   with:
