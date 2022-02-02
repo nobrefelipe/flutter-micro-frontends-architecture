@@ -37,7 +37,7 @@ abstract class BaseApp {
     if (microApps.isNotEmpty && routes.isEmpty) {
       for (MicroApp microapp in microApps) {
         routes.addAll(microapp.routes);
-        microapp.initRouteListeners();
+        microapp.initEventListeners();
         if (microapp.microAppWidget() != null) {
           WidgetsRegistry[microapp.microAppName] = microapp.microAppWidget();
         }

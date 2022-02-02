@@ -50,7 +50,7 @@ abstract class MicroApp {
   ///  });
   /// ```
   ///
-  void initRouteListeners();
+  void initEventListeners();
 
   ///
   /// * Micro App Events

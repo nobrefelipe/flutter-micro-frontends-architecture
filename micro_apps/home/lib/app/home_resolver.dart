@@ -15,7 +15,7 @@ class HomeResolver implements MicroApp {
       };
 
   @override
-  void initRouteListeners() {
+  void initEventListeners() {
     CustomEventBus.on<UserLoggedInEvent>((event) {
       Routing.pushNamed(Routes.home, arguments: event);
     });

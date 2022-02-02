@@ -14,7 +14,7 @@ class LoginResolver implements MicroApp {
       };
 
   @override
-  void initRouteListeners() {
+  void initEventListeners() {
     CustomEventBus.on<UserLoggedOutEvent>((event) {
       // we can use events to navigate as well.
       // Routing.pushNamed<UserLoggedOutEvent>(Routes.login);

@@ -39,7 +39,7 @@ Every micro app can register as many events as they need. The events are registr
 ```dart
     // login_app_resolver.dart
     @override
-    void initRouteListeners() {
+    void initEventListeners() {
         CustomEventBus.on<UserLoggedOutEvent>((event) {
             print('LOGGED OUT');
         });

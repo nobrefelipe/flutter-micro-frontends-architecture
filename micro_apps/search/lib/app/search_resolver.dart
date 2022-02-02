@@ -15,7 +15,7 @@ class SearchResolver implements MicroApp {
       };
 
   @override
-  void initRouteListeners() {
+  void initEventListeners() {
     CustomEventBus.on<SearchDummyEvent>((event) {
       print(event.user);
     });
