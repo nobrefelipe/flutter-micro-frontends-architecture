@@ -7,6 +7,8 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textController = TextEditingController();
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('LOGIN'),
@@ -14,21 +16,31 @@ class LoginView extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          height: 100,
+          padding: const EdgeInsets.all(15.0),
+          height: 200,
           child: Column(
             children: [
+              CupertinoTextField(
+                padding: const EdgeInsets.all(15.0),
+                placeholder: 'Name',
+                controller: textController,
+              ),
               Align(
                 alignment: Alignment.center,
                 child: CupertinoButton(
                   child: const Text('Login'),
                   onPressed: () {
-                    print('======== Navigating to Home Screen via UserLoggedInEvent ========');
+                    ///
+                    /// Navigating to Home Screen via UserLoggedInEvent
+                    ///
                     Routing.pushNamed(
                       Routes.home,
-                      arguments: RouteEvents.homeEvents.userLoggedInEvent('Felipe'),
+                      arguments: RouteEvents.homeEvents.userLoggedInEvent(textController.text),
                     );
 
-                    print('======== Emit OpenBottomSheet | Home micro front end is listening to it ========');
+                    ///
+                    /// Emit OpenBottomSheetEvent | Home micro front end is listening to it
+                    ///
                     CustomEventBus.emit(RouteEvents.homeEvents.openBottomSheet('Login'));
                   },
                 ),

@@ -19,7 +19,7 @@ class HomeResolver implements MicroApp {
     CustomEventBus.on<UserLoggedInEvent>((event) {
       Routing.pushNamed(Routes.home, arguments: event);
     });
-    CustomEventBus.on<OpenBottomSheet>((OpenBottomSheet event) async {
+    CustomEventBus.on<OpenBottomSheetEvent>((OpenBottomSheetEvent event) async {
       await showBottonSheetEvent(event.title);
     });
   }

@@ -38,17 +38,24 @@ class HomeView extends StatelessWidget {
             CupertinoButton(
               child: const Text('logout'),
               onPressed: () {
-                print('======== Navigating to Login Screen via routing ========');
+                ///
+                /// Navigating to Login Screen via routing
+                ///
                 Routing.pushNamed(Routes.login);
-                print('======== Emit UserLoggedOutEvent listened by the Login view ========');
+
+                ///
+                /// Emit UserLoggedOutEvent listened by the Login view
+                ///
                 CustomEventBus.emit(RouteEvents.loginEvents.userLoggedOutEvent);
               },
             ),
             CupertinoButton(
               child: const Text('open bottom sheet'),
               onPressed: () {
-                print('======== Open a bottom sheet via OpenBottomSheet Event ========');
-                CustomEventBus.emit(OpenBottomSheet('Home'));
+                ///
+                /// Open a bottom sheet via OpenBottomSheetEvent
+                ///
+                CustomEventBus.emit(OpenBottomSheetEvent('Home'));
               },
             ),
             Spacer(),

@@ -20,7 +20,7 @@ class CustomEventBus {
   /// Listen to the fired event and execute a function
   ///
   static on<T>(Function f) {
-    CustomEventBus.bus.on<T>().listen((T event) {
+    _singleton._bus.on<T>().listen((T event) {
       f(event);
     });
   }

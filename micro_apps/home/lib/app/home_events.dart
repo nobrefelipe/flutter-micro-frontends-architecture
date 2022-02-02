@@ -13,9 +13,9 @@ class UserLoggedInEvent extends RouteEvent {
 
 class UserCreatedEvent extends RouteEvent {}
 
-class OpenBottomSheet extends RouteEvent {
+class OpenBottomSheetEvent extends RouteEvent {
   final String title;
-  OpenBottomSheet(this.title);
+  OpenBottomSheetEvent(this.title);
 }
 
 ///
@@ -24,5 +24,5 @@ class OpenBottomSheet extends RouteEvent {
 ///
 class HomeEvents extends RouteEvent {
   RouteEvent userLoggedInEvent(String user) => UserLoggedInEvent(user);
-  RouteEvent openBottomSheet(String title) => OpenBottomSheet(title);
+  RouteEvent openBottomSheet(String title) => OpenBottomSheetEvent(title);
 }
