@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../micro_core.dart';
+import '../services/routing/generate_route.dart';
 
 /// * Base App
 ///
@@ -38,6 +39,7 @@ abstract class BaseApp {
       for (MicroApp microapp in microApps) {
         routes.addAll(microapp.routes);
         microapp.initEventListeners();
+        microapp.injectionsRegister();
         if (microapp.microAppWidget() != null) {
           WidgetsRegistry[microapp.microAppName] = microapp.microAppWidget();
         }
@@ -52,13 +54,22 @@ abstract class BaseApp {
   ///
   Route<dynamic>? generateRoute(RouteSettings settings) {
     var routerName = settings.name;
-    var routerArgs = settings.arguments;
 
     var navigateTo = routes[routerName];
     if (navigateTo == null) return null;
 
-    return MaterialPageRoute(
-      builder: (context) => navigateTo.call(context, routerArgs),
-    );
+    for (MicroApp microapp in microApps) {
+      for (var page in microapp.routes.keys) {
+        if (settings.name == page) {
+          return onGenerateRoute(
+            widget: microapp.routes[page],
+            navigateTo: navigateTo,
+            settings: settings,
+            arguments: settings.arguments,
+            transitionType: microapp.transitionType,
+          );
+        }
+      }
+    }
   }
 }

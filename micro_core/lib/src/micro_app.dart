@@ -25,6 +25,13 @@ abstract class MicroApp {
   Map<String, WidgetBuilderArgs> get routes;
 
   ///
+  /// The transition animation type this route will be using
+  /// eg.: SlideUp, Fade, DefaultTransition, etc...
+  /// TO add more transition types go to `routing/generate_route.dart`
+  ///
+  TransitionType? get transitionType;
+
+  ///
   /// * Micro App Widget
   ///
   /// Sometimes our micro app is just a widget and not a view.
@@ -68,4 +75,9 @@ abstract class MicroApp {
   /// ```
   ///
   RouteEvent microAppEvents();
+
+  ///
+  /// * Injections Register
+  ///
+  void injectionsRegister();
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:micro_core/micro_core.dart';
 
 import 'login_events.dart';
+import 'login_inject.dart';
 import 'presenter/login_view.dart';
 
 class LoginResolver implements MicroApp {
@@ -27,4 +28,10 @@ class LoginResolver implements MicroApp {
 
   @override
   Widget? microAppWidget() => null;
+
+  @override
+  void injectionsRegister() => Inject.initialize();
+
+  @override
+  TransitionType? get transitionType => TransitionType.fade;
 }

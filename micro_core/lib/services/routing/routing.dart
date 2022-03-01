@@ -32,5 +32,26 @@ abstract class Routing {
     );
   }
 
+  static offAllNamed(
+    Routes route, {
+    bool Function(Route<dynamic>)? predicate,
+    dynamic arguments,
+  }) {
+    return navigatorKey.currentState?.pushNamedAndRemoveUntil(
+      route.value,
+      predicate ?? (_) => false,
+      arguments: arguments,
+    );
+  }
+
+  static get current {
+    String? currentPath;
+    navigatorKey.currentState?.popUntil((route) {
+      currentPath = route.settings.name;
+      return true;
+    });
+
+    return currentPath;
+  }
   // Add more routing type here if necessary
 }
