@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:micro_core/micro_core.dart';
-import 'package:search/app/presenter/search_results.dart';
 
-class SearchButton extends StatelessWidget {
+import 'search_results.dart';
+
+class SearchButton extends StatefulWidget {
+  @override
+  State<SearchButton> createState() => _SearchButtonState();
+}
+
+class _SearchButtonState extends State<SearchButton> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -13,7 +19,7 @@ class SearchButton extends StatelessWidget {
         color: Colors.red,
         child: FittedBox(
           child: const Text(
-            'Search micro app',
+            'Search Component',
             style: TextStyle(
               color: Colors.white,
             ),

@@ -4,6 +4,7 @@ import 'package:micro_core/micro_core.dart';
 import 'presenter/search_button.dart';
 import 'presenter/search_results.dart';
 import 'search_events.dart';
+import 'search_inject.dart';
 
 class SearchResolver implements MicroApp {
   @override
@@ -26,4 +27,10 @@ class SearchResolver implements MicroApp {
 
   @override
   Widget microAppWidget() => SearchButton();
+
+  @override
+  void injectionsRegister() => Inject.initialize();
+
+  @override
+  TransitionType? get transitionType => null;
 }

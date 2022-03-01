@@ -9,5 +9,6 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  flagsmith: ^2.0.1+2
 
 

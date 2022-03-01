@@ -1,10 +1,10 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
-import 'package:home/home.dart';
-import 'package:login/login.dart';
+import 'package:home/app/home_resolver.dart';
+import 'package:login/app/login_resolver.dart';
 import 'package:micro_core/micro_core.dart';
-import 'package:search/search.dart';
+import 'package:search/app/search_resolver.dart';
 
 void main() {
   runApp(MyApp());
