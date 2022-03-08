@@ -47,13 +47,6 @@ Every micro app can register as many events as they need. The events are registr
 ```
 
 
-### **Best practices**
-
-Events are aways in the past tense. And should always end with the 'Event' keywork.
-Thus, events are always triggered after an action.
-
-Eg.: `UserLoggedInEvent`, `AccountCreatedEvent`
-
 ### **Registering an event**
 
 When you create a micro app with the `scaffold cli` it will create a `*_events.dart` file for you (eg.: search_events.dart) with some dummy events registred there to be used as examples.
@@ -155,16 +148,28 @@ Then when you need to navigate to the Home Micro App:
 
 
 
-### **Custom Route Tansitions**
+### **Route Tansitions**
 
-You can use custom route transitions predefined in the `Transitions` class.
-
+You can use define the route transition for a micro app like so:
 ```dart
-    // For the custom transitions see:
-    // micro_core/lib/services/routing/routing_transitions.dart
+    //micro_app_resolver.dart
     
-    // Navigate with custom transition
-    Routing.pushCustom(SearchResults(), transitionType: TransitionType.slideUp);
+    @override
+    TransitionType get transitionType => TransitionType.slideUp;
+```
+
+
+`TransitionType` is an enum with predefined transitions:
+```dart
+enum TransitionType {
+  defaultTransition,
+  none,
+  fade,
+  slideDown,
+  slideUp,
+  slideLeft,
+  slideRight,
+}
 ```
 
 
